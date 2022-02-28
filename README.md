@@ -1,0 +1,1 @@
+# All mod specific credits are in the `README`s of their respective folders, or the in-game authors list.

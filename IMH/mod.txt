@@ -1,0 +1,16 @@
+{
+  "name": "Ijre Mod Hub",
+  "description": "Condenses all mods made by ijre into one singular mod, adding toggleable settings.",
+  "author": "ijre, Lyra Keaton\nLuffy (FFC-E), Fooksie (Multiplayer Pause), Alcat101 (SOCOM)",
+  "priority": 499,
+  "updates":
+  [
+    {
+      "identifier": "IMH",
+      "host":
+      {
+        "meta": "https://github.com/ijre/ijreModHub/releases/latest/download/meta.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "menu_id":        "IMH_Menu",
+  "parent_menu_id": "blt_options",
+  "title":          "IMH_Title",
+  "description":    "IMH_Desc",
+  "items":
+  [
+    {
+      "type":         "toggle",
+      "id":           "IMH_InfThrows",
+      "title":        "IMH_InfThrows_Title",
+      "callback":     "IMH_OnInfThrows",
+      "value":        "InfThrows",
+      "default_value": "1"
+    },
+    {
+      "type":         "toggle",
+      "id":           "IMH_NoTiers",
+      "title":        "IMH_NoTiers_Title",
+      "callback":     "IMH_OnNoTiers",
+      "value":        "NoTiers",
+      "default_value": "1"
+    },
+    {
+      "type":         "toggle",
+      "id":           "IMH_OldPD2",
+      "title":        "IMH_OldPD2_Title",
+      "callback":     "IMH_OnOldPD2",
+      "value":        "OldPD2",
+      "default_value": "1"
+    },
+    {
+      "type":         "toggle",
+      "id":           "IMH_Overwint",
+      "title":        "IMH_Overwint_Title",
+      "callback":     "IMH_OnOverwint",
+      "value":        "Overwint",
+      "default_value": "1"
+    }
+  ]
+}

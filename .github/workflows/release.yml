@@ -1,0 +1,40 @@
+name: Upload Mod For Release
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  uploadMod:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Archive Mod
+      run: |
+         .\.github\7za.exe -tzip a ".\IMH.zip" ".\IMH"
+      shell: powershell
+    - name: Upload Archive
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ github.event.release.upload_url }}
+        asset_path: ./IMH.zip
+        asset_name: IMH.zip
+        asset_content_type: application/zip
+
+  uploadHashFile:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Create Meta.json
+      run: |
+         $(cat .\.github\meta.json).Replace("%HASH%", $(./.github/hash.exe "./IMH").Substring(17)) > ./meta.json
+    - name: Upload Meta.json
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ github.event.release.upload_url }}
+        asset_path: ./meta.json
+        asset_name: meta.json
+        asset_content_type: application/json

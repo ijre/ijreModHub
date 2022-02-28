@@ -1,0 +1,19 @@
+<group hook_id="lib/" :script_path="Mods/">
+  <group :script_path="Infinite Throwables/">
+    <post :hook_id="setups/menusetup"  :script_path="main.lua"/>
+    <post :hook_id="setups/gamesetup"  :script_path="main.lua"/>
+    <post :hook_id="tweak_data/blackmarket/projectilestweakdata" :script_path="projectilesTD.lua"/>
+    <post :hook_id="network/base/networkpeer"        :script_path="networking.lua"/>
+    <post :hook_id="network/base/hostnetworksession" :script_path="networking.lua"/>
+    <post :hook_id="managers/playermanager"  :script_path="plyrmanager.lua"/>
+  </group>
+
+  <post :hook_id="managers/skilltreemanager"  :script_path="No Skill Tiers/main.lua"/>
+
+  <group :script_path="Old PD2 Was Better/">
+    <post :hook_id="units/beings/player/playerdamage"  :script_path="OldUppers/main.lua"/>
+    <post :hook_id="tweak_data/weapontweakdata"  :script_path="OldCrossbows/main.lua"/>
+  </group>
+
+  <post :hook_id="setups/gamesetup"  :script_path="overwint/init.lua"/>
+</group>

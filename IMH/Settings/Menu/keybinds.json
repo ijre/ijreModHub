@@ -1,0 +1,11 @@
+{
+  "overwint":
+  [
+    {
+      "keybind_id":  "Overwint_Toggle",
+      "script_path": "main.lua",
+      "name":        "Overwint",
+      "run_in_game": true
+    }
+  ]
+}
