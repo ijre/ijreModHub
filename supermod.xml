@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<mod>
-  <hooks script_path="IMH/">
-    <post hook_id="core/lib/system/coresystem" :script_path="main.lua"/>
-    <:include src="IMH/hooks.xml"/>
-  </hooks>
-</mod>
