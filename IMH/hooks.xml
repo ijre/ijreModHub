@@ -15,5 +15,7 @@
     <post :hook_id="tweak_data/weapontweakdata"  :script_path="OldCrossbows/main.lua"/>
   </group>
 
+  <post :hook_id="tweak_data/skilltreetweakdata"  :script_path="Lower Skill Costs/main.lua"/>
+
   <post :hook_id="setups/gamesetup"  :script_path="overwint/init.lua"/>
 </group>

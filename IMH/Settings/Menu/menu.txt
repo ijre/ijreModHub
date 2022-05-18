@@ -15,6 +15,14 @@
     },
     {
       "type":         "toggle",
+      "id":           "IMH_LowerSkills",
+      "title":        "IMH_LowerSkills_Title",
+      "callback":     "IMH_OnLowerSkills",
+      "value":        "LowerSkills",
+      "default_value": "1"
+    },
+    {
+      "type":         "toggle",
       "id":           "IMH_NoTiers",
       "title":        "IMH_NoTiers_Title",
       "callback":     "IMH_OnNoTiers",

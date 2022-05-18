@@ -2,6 +2,7 @@
   "IMH_Title": "Ijre Mods",
   "IMH_Desc": "Enable/Disable ijre's cheat mods",
   "IMH_InfThrows_Title": "Toggle Infinite Throwables",
+  "IMH_LowerSkills_Title": "Toggle Lower Skill Costs",
   "IMH_NoTiers_Title": "Toggle No Skill Tiers",
   "IMH_OldPD2_Title": "Toggle Old PD2 Was Better",
   "IMH_Overwint_Title": "Toggle Overwint"
