@@ -5,8 +5,10 @@ local function PocoHudDrawUppers(uppersCD)
 
   -- this code taken from AdditionalPocoHudTrackers in lua/playerdamage.lua in its _check_bleed_out hook (vers. 22 in mod.txt)
 
+---@diagnostic disable: undefined-field
   local PocoHud3Class = _G.PocoHud3Class
   local PocoHud3 = _G.PocoHud3
+---@diagnostic enable: undefined-field
 
   if PocoHud3Class == nil or type(PocoHud3) ~= "table" then
     return
