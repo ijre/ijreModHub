@@ -5,15 +5,6 @@ function SkillTreeTweakData:init()
   if not ijreMods.Settings.LowerSkills then
     return end
 
-  self.costs =
-  {
-		unlock_tree = 0,
-		default = 1,
-		pro = 1,
-		hightier = 2,
-		hightierpro = 4
-	}
-
   self.tier_cost =
   {
     {

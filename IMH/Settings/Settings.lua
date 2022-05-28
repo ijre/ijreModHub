@@ -85,13 +85,13 @@ Hooks:Add("MenuManagerInitialize", "IMH_OnMenuInit", function(MM)
 
   MenuCallbackHandler.IMH_OnLowerSkills = function(self, option)
     ijreMods.Settings.LowerSkills = option:value() == "on"
-    ijreMods.Settings.NoTiers = false
+    -- ijreMods.Settings.NoTiers = false
     ijreMods:Save()
   end
 
   MenuCallbackHandler.IMH_OnNoTiers = function(self, option)
     ijreMods.Settings.NoTiers = option:value() == "on"
-    ijreMods.Settings.LowerSkills = false
+    -- ijreMods.Settings.LowerSkills = false
     ijreMods:Save()
   end
 
